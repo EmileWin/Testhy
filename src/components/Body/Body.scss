@@ -1,0 +1,21 @@
+@import '../../scss/mixins.scss';
+
+.body {
+  padding: 20px;
+  height: calc(100vh - 80px);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+
+  @include not-desktop {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  @include mobile {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+}

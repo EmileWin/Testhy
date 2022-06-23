@@ -1,0 +1,37 @@
+@import '../../scss/mixins.scss';
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 40px;
+  padding: 0 20px;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.2);
+
+  .header-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+    color: #636465;
+    font-size: 12px;
+
+    .header-info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+
+      @include mobile-small {
+        display: none;
+      }
+    }
+
+    .header-spacebar-text {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+}

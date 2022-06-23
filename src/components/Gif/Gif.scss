@@ -1,0 +1,49 @@
+.gif {
+  color: white;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .gif-image {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .lock-image {
+    position: absolute;
+    z-index: 10;
+    top: calc(100% - 41px);
+    left: 9px;
+  }
+
+  .lock-text {
+    position: absolute;
+    z-index: 10;
+    font-size: 12px;
+    font-weight: 500;
+    top: calc(100% - 32px);
+    left: 37px;
+  }
+
+  .block {
+    display: none;
+  }
+
+  &:hover {
+    box-shadow: inset 0 0 0 4px #4327f5;
+
+    .block {
+      display: block;
+    }
+
+    .main-lock {
+      display: none;
+    }
+  }
+}
