@@ -1,5 +1,4 @@
 {
-  "homepage": "https://EmileWin.github.io/Testhy",
   "name": "testhy",
   "version": "1.0.0",
   "description": "",
@@ -7,8 +6,6 @@
   "scripts": {
     "start": "webpack serve --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -b main -d public",
     "test": "jest"
   },
   "keywords": [],
@@ -69,7 +66,6 @@
     "axios": "^0.27.2",
     "dotenv-webpack": "^7.1.0",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "gh-pages": "^4.0.0",
     "node-sass": "^7.0.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
