@@ -6,7 +6,7 @@ This project is a small GIPHY clone
 
 ## Demo
 
-Working demo: https://emilewin.github.io/Testhy
+You can check out working demo [here](https://emilewin.github.io/Testhy)
 
 ## ScreenShot
 
@@ -29,3 +29,8 @@ Working demo: https://emilewin.github.io/Testhy
 - Add `.env` file with your GIPHY API key
 - Run `npm start` to start the application
 - It will be accessible at `localhost:9500`
+
+## Licence
+You can check out the the licence [here](https://github.com/EmileWin/Testhy/blob/main/LICENCE)
+
+This project is licenced under the terms of the **MIT** licence.
